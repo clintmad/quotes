@@ -8,29 +8,28 @@
     <title>Quotes</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
     <script src="https://use.fontawesome.com/46ca59c6b1.js"></script>
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
-<body>
+<body class="background">
+  <h1 class="text-center title">Random Quote Generator</h1>
+  <div class="container">
+    <div class="box">
+      <div id="quote">
 
-    <div class="container-fluid">
-        <div id="quote">
-
-        </div>
-        <button id="button">New Quote</button>
+      </div>
+      <div class="flex">
+        <button id="getButton" class="btn btn-lg getButton">Get Quote</button>
+      </div>
     </div>
-
+  </div>
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="quote-service.js"></script>
     <script src="quote-controller.js"></script>
 </body>
 
 </html>
-
-
-
-
-<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>

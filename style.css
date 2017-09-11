@@ -1,0 +1,53 @@
+.title {
+  font-family: 'Satisfy', cursive;
+  margin-top: 100px;
+  color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+.background {
+  background-color: grey; 
+  transition: 1.0s ease;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  width: 900px;
+  margin-top: 60px;
+}
+.box {
+  font-family: 'Satisfy', cursive;
+  width: 750px;
+  padding: 20px;
+  background-color: white;
+  visibility: hidden;
+  border-radius: 10px;
+  opacity: 0.85;
+  filter: alpha(opacity=85);
+}
+.box:hover {
+  opacity: 1.0;
+  filter: aplpha(opacity=100);
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  visibility: visible;
+}
+.tumblr {
+  background-color: black;
+  color: white;
+}
+.tweet {
+  background-color: #4099FF;
+  color: white;
+}
+.getButton {
+  font-family: 'Satisfy', cursive;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  overflow: hidden;
+}
