@@ -10,10 +10,9 @@ function QuoteController() {
 
             var quoteTitle = quoteService.extract(data[0].title);
             var quoteContent = quoteService.extract(data[0].content);
-            var wholeContent = quoteContent + " -" + quoteTitle;
 
             var template = "";
-            var url = "https://twitter.com/intent/tweet?text=" + encodeURIComponent(quoteContent);
+            var url = "https://twitter.com/intent/tweet?text=" + encodeURIComponent(quoteContent + ' -' + quoteTitle);
             var tUrl = "https://www.tumblr.com/widgets/share/tool?posttype=quote&tags=quotes&caption=" +
                 encodeURIComponent(quoteTitle) + "&content=" + encodeURIComponent(quoteContent) +
                 "&canonicalUrl=https://www.tumblr.com";
