@@ -13,15 +13,11 @@ function QuoteController() {
             var wholeContent = quoteContent + " -" + quoteTitle;
 
             var template = "";
-            var url =
-                "https://twitter.com/intent/tweet?text=" +
-                encodeURIComponent(quoteContent);
-            var tUrl =
-                "https://www.tumblr.com/widgets/share/tool?posttype=quote&tags=quotes&caption=" +
-                encodeURIComponent(quoteTitle) +
-                "&content=" +
-                encodeURIComponent(quoteContent) +
+            var url = "https://twitter.com/intent/tweet?text=" + encodeURIComponent(quoteContent);
+            var tUrl = "https://www.tumblr.com/widgets/share/tool?posttype=quote&tags=quotes&caption=" +
+                encodeURIComponent(quoteTitle) + "&content=" + encodeURIComponent(quoteContent) +
                 "&canonicalUrl=https://www.tumblr.com";
+
             template += `
       
                 <h2>${data[0].content}</h2>

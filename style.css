@@ -1,4 +1,5 @@
 .title {
+  text-align: center;
   font-family: 'Satisfy', cursive;
   margin-top: 100px;
   color: white;
@@ -12,12 +13,12 @@
 .container {
   display: flex;
   justify-content: center;
-  width: 900px;
+  max-width: 900px;
   margin-top: 60px;
 }
 .box {
   font-family: 'Satisfy', cursive;
-  width: 750px;
+  max-width: 750px;
   padding: 20px;
   background-color: white;
   visibility: hidden;
